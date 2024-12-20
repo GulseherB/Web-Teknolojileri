@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gulse\\source\\repos\\DB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\controllers\\islemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\controllers\\islemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\models\\hesaprandevucontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\models\\hesaprandevucontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\models\\hesap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\models\\hesap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\views\\islem\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\views\\islem\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\views\\islem\\hesapekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\views\\islem\\hesapekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\migrations\\hesaprandevucontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\migrations\\hesaprandevucontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\migrations\\20241219092340_mgrtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\migrations\\20241219092340_mgrtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|c:\\users\\gulse\\source\\repos\\db\\db\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC883B9E-CEB3-4088-B084-2F19D16FFD30}|DB\\DB.csproj|solutionrelative:db\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hesap.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Models\\Hesap.cs",
+              "RelativeDocumentMoniker": "DB\\Models\\Hesap.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Models\\Hesap.cs",
+              "RelativeToolTip": "DB\\Models\\Hesap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:05:07.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "islemController.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Controllers\\islemController.cs",
+              "RelativeDocumentMoniker": "DB\\Controllers\\islemController.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Controllers\\islemController.cs",
+              "RelativeToolTip": "DB\\Controllers\\islemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:00:43.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "hesaprandevuContext.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Models\\hesaprandevuContext.cs",
+              "RelativeDocumentMoniker": "DB\\Models\\hesaprandevuContext.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Models\\hesaprandevuContext.cs",
+              "RelativeToolTip": "DB\\Models\\hesaprandevuContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:05:39.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DB\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DB\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:41:04.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\islem\\Index.cshtml",
+              "RelativeDocumentMoniker": "DB\\Views\\islem\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\islem\\Index.cshtml",
+              "RelativeToolTip": "DB\\Views\\islem\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T11:44:20.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HesapEkle.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\islem\\HesapEkle.cshtml",
+              "RelativeDocumentMoniker": "DB\\Views\\islem\\HesapEkle.cshtml",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\islem\\HesapEkle.cshtml",
+              "RelativeToolTip": "DB\\Views\\islem\\HesapEkle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T13:26:59.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Randevu.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Models\\Randevu.cs",
+              "RelativeDocumentMoniker": "DB\\Models\\Randevu.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Models\\Randevu.cs",
+              "RelativeToolTip": "DB\\Models\\Randevu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:05:17.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241219092340_mgrtn.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Migrations\\20241219092340_mgrtn.cs",
+              "RelativeDocumentMoniker": "DB\\Migrations\\20241219092340_mgrtn.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Migrations\\20241219092340_mgrtn.cs",
+              "RelativeToolTip": "DB\\Migrations\\20241219092340_mgrtn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:23:41.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "hesaprandevuContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Migrations\\hesaprandevuContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DB\\Migrations\\hesaprandevuContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Migrations\\hesaprandevuContextModelSnapshot.cs",
+              "RelativeToolTip": "DB\\Migrations\\hesaprandevuContextModelSnapshot.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:24:08.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T09:41:12.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DB\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DB\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T09:42:58.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "DB\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\gulse\\source\\repos\\DB\\DB\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "DB\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T09:41:13.453Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
