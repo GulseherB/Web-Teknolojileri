@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DB
+build_property.RootNamespace = DB
+build_property.ProjectDir = C:\Users\gulse\source\repos\DB\DB\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\gulse\source\repos\DB\DB
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/AnaSayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cQW5hU2F5ZmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/HesapEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSGVzYXBFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/RandevuEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cUmFuZGV2dUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/RandevuGoster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cUmFuZGV2dUdvc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/SadeceLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cU2FkZWNlTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/UrsSesGet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cVXJzU2VzR2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/islem/UsrIcerik.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cVXNySWNlcmlrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/DB/DB/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k291dkjyxa

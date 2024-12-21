@@ -1,0 +1,40 @@
+﻿@model DB.Models.Hesap
+
+<div class="alert-danger"> @TempData["msj"]</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="HesapKaydet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HesapAd" class="control-label"></label>
+                <input asp-for="HesapAd" class="form-control" />
+                <span asp-validation-for="HesapAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HesapSoyad" class="control-label"></label>
+                <input asp-for="HesapSoyad" class="form-control" />
+                <span asp-validation-for="HesapSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HesapEmail" class="control-label"></label>
+                <input asp-for="HesapEmail" class="form-control" />
+                <span asp-validation-for="HesapEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HesapSifre" class="control-label"></label>
+                <input asp-for="HesapSifre" type="password" class="form-control" />
+                <span asp-validation-for="HesapSifre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Hesap Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
