@@ -1,0 +1,40 @@
+﻿@model IEnumerable<denemekicin1.Models.Randevu>
+
+<div class="container">
+    <h2>Randevularınız</h2>
+
+    @if (!Model.Any())
+    {
+        <p>Henüz bir randevu almadınız.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Hesap ID</th>
+                    <th>Gün</th>
+                    <th>Saat</th>
+                    <th>Bitiş Saati</th>
+                    <th>Çalışan</th>
+                    <th>İşlemler</th>
+                    <th>Toplam Tutar</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var randevu in Model)
+                {
+                    <tr>
+                        <td>@randevu.HesapID</td>
+                        <td>@randevu.RandevuGun</td>
+                        <td>@randevu.RandevuSaat</td>
+                        <td>@randevu.RandevuBitisSaati:00</td>
+                        <td>@randevu.Calisan?.CalisanAd</td> <!-- Çalışan adını göster -->
+                        <td>@randevu.SacIslemleri</td>
+                        <td>@randevu.ToplamTutar tl </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

@@ -1,0 +1,32 @@
+﻿@model denemekicin1.Models.Hesap
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UsrLogin" asp-controller="islem">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HesapAd" class="control-label"></label>
+                <input asp-for="HesapAd" class="form-control" />
+                <span asp-validation-for="HesapAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HesapSifre" class="control-label"></label>
+                <input asp-for="HesapSifre" class="form-control" />
+                <span asp-validation-for="HesapSifre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

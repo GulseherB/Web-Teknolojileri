@@ -1,0 +1,121 @@
+﻿@model denemekicin1.Models.Randevu
+
+@{
+    ViewData["Title"] = "Randevu Ekle";
+}
+
+<h2>Randevu Ekle</h2>
+
+@if (TempData["msj"] != null)
+{
+    <div class="alert alert-warning">@TempData["msj"]</div>
+}
+
+<form asp-action="RandevuKaydet2" method="post">
+
+    <!-- Hesap ID -->
+    <div class="form-group">
+        <label asp-for="HesapID" class="control-label">Hesap ID</label>
+        <input asp-for="HesapID" class="form-control" readonly />
+        <span asp-validation-for="HesapID" class="text-danger"></span>
+    </div>
+
+    <!-- Gün Seçimi -->
+    <div class="form-group">
+        <label asp-for="RandevuGun" class="control-label">Gün Seçimi</label>
+        <select asp-for="RandevuGun" class="form-control">
+            <option value="Pazartesi">Pazartesi</option>
+            <option value="Salı">Salı</option>
+            <option value="Çarşamba">Çarşamba</option>
+            <option value="Perşembe">Perşembe</option>
+            <option value="Cuma">Cuma</option>
+        </select>
+        <span asp-validation-for="RandevuGun" class="text-danger"></span>
+    </div>
+
+    <!-- Saat Seçimi -->
+    <div class="form-group">
+        <label asp-for="RandevuSaat" class="control-label">Saat Seçimi</label>
+        <select asp-for="RandevuSaat" class="form-control">
+            @for (int i = 7; i <= 18; i++)
+            {
+                <option value="@i">@i:00</option>
+            }
+        </select>
+        <span asp-validation-for="RandevuSaat" class="text-danger"></span>
+    </div>
+
+   
+    <!-- Çalışan Seçimi -->
+    <div class="form-group">
+        <label asp-for="CalisanID" class="control-label">Çalışan Seçimi</label>
+        <select asp-for="CalisanID" class="form-control" asp-items="@(new SelectList(ViewBag.Calisanlar, "CalisanID", "CalisanAd"))">
+            <option value="">Çalışan Seçin</option>
+        </select>
+        <span asp-validation-for="CalisanID" class="text-danger"></span>
+    </div>
+
+    <!-- Saç İşlemleri (Radio Buttons) -->
+    <div class="form-group">
+        <label class="control-label">Saç İşlemleri</label>
+        <div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Kesim - 50" data-sure="1">
+                <label class="form-check-label">Kesim - 50 TL (1 saat)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Boya - 150" data-sure="3">
+                <label class="form-check-label">Boya - 150 TL (3 saat)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Fon - 30" data-sure="1">
+                <label class="form-check-label">Fon - 30 TL (1 saat)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Perma - 200" data-sure="2">
+                <label class="form-check-label">Perma - 200 TL (2 saat)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Brezilya Fönü - 250" data-sure="1">
+                <label class="form-check-label">Brezilya Fönü - 250 TL (1 saat)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Saç Bakımı - 120" data-sure="2">
+                <label class="form-check-label">Saç Bakımı - 120 TL (2 saat)</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="SacIslemleri" class="form-check-input sac-islemi" value="Saç Düzleştirme - 180" data-sure="1">
+                <label class="form-check-label">Saç Düzleştirme - 180 TL (1 saat)</label>
+            </div>
+        </div>
+    </div>
+
+   
+    <button type="submit" class="btn btn-primary">Randevu Kaydet</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelectorAll(".sac-islemi").forEach(radio => {
+            radio.addEventListener("change", function () {
+                const fiyat = this.getAttribute("data-fiyat");
+                const sure = parseInt(this.getAttribute("data-sure")); // İşlem süresini al
+                const saat = parseInt(document.getElementById("RandevuSaat").value);
+
+                // Toplam tutar ve işlem süresi ayarla
+                document.getElementById("toplamTutar").value = fiyat + " TL";
+                document.getElementById("islemSuresi").value = sure;
+
+                // Bitiş saatini hesapla
+                if (!isNaN(saat) && !isNaN(sure)) {
+                    const bitisSaati = saat + sure;
+                    document.getElementById("randevuBitisSaati").value = bitisSaati + ":00";
+                } else {
+                    document.getElementById("randevuBitisSaati").value = "";
+                }
+            });
+        });
+    </script>
+}
+

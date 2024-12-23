@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<denemekicin1.Models.Calisan>
+
+<a asp-action="CalisanEkle" class="btn btn-primary">Yeni Çalışan Ekle</a>
+<div class="alert-danger"> @TempData["msj"]</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CalisanAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CalisanSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CalisanAd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CalisanSoyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefon)
+                </td>
+                <td>
+                    <a asp-action="CalisanDuzenle" asp-route-id="@item.CalisanID" class="btn btn-sm btn-warning">Çalışan Düzenle</a> |
+                    <a asp-action="CalisanDetay" asp-route-id="@item.CalisanID" class="btn btn-sm btn-info">Çalışan Detay</a> |
+                    <a asp-action="CalisanSil" asp-route-id="@item.CalisanID" class="btn btn-sm btn-danger">Çalışan Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

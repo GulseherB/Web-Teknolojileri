@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<denemekicin1.Models.Hesap>
+
+<a asp-action="RandevuAl">Yeni Yazar Ekle</a>
+<div class="alert-danger"> @TempData["msj"]</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HesapAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HesapSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HesapEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HesapAd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HesapSoyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HesapEmail)
+                </td>
+                <td>
+                    <a asp-action="Index" asp-route-id="@item.HesapID" class="btn btn-sm btn-warning">Hesap Düzenle</a> |
+                    <a asp-action="Index" asp-route-id="@item.HesapID" class="btn btn-sm btn-info">Hesap Detay</a> |
+                    <a asp-action="Index" asp-route-id="@item.HesapID" class="btn btn-sm btn-danger">Hesap Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

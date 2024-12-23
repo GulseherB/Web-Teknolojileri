@@ -1,0 +1,38 @@
+﻿@model denemekicin1.Models.Calisan
+
+<div class="alert-danger"> @TempData["msj"]</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CalisanKaydet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="CalisanAd" class="control-label"></label>
+                <input asp-for="CalisanAd" class="form-control" />
+                <span asp-validation-for="CalisanAd" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CalisanSoyad" class="control-label"></label>
+                <input asp-for="CalisanSoyad" class="form-control" />
+                <span asp-validation-for="CalisanSoyad" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Telefon" class="control-label"></label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Çalışan Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
