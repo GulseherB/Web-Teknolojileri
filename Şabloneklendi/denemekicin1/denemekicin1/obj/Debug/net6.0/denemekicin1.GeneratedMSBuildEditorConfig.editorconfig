@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = denemekicin1
+build_property.RootNamespace = denemekicin1
+build_property.ProjectDir = C:\Users\gulse\source\repos\denemekicin1\denemekicin1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\gulse\source\repos\denemekicin1\denemekicin1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/HesapConsumeApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYXBDb25zdW1lQXBpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Home/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Home/Store.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdG9yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/AnasSayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cQW5hc1NheWZhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/CalisanDuzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cQ2FsaXNhbkR1emVubGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/CalisanEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cQ2FsaXNhbkVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/CalisanGoster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cQ2FsaXNhbkdvc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/HesabinRandevusu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSGVzYWJpblJhbmRldnVzdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/HesapDuzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSGVzYXBEdXplbmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/HesapEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSGVzYXBFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/HesapGoster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSGVzYXBHb3N0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/RandevuEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cUmFuZGV2dUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/RandevuGoster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cUmFuZGV2dUdvc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/SadeceLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cU2FkZWNlTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/UsrIcerik.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cVXNySWNlcmlrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/islem/UsrSesGet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXNsZW1cVXNyU2VzR2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulse/source/repos/denemekicin1/denemekicin1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-79j5cx90iy

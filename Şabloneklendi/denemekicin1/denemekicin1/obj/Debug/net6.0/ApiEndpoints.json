@@ -1,0 +1,101 @@
+[
+  {
+    "ContainingType": "denemekicin1.Controllers.HesapApiController",
+    "Method": "Get",
+    "RelativePath": "api/HesapApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[denemekicin1.Models.Hesap, denemekicin1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "denemekicin1.Controllers.HesapApiController",
+    "Method": "Post",
+    "RelativePath": "api/HesapApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "y",
+        "Type": "denemekicin1.Models.Hesap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "denemekicin1.Controllers.HesapApiController",
+    "Method": "Delete",
+    "RelativePath": "api/HesapApi",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "denemekicin1.Controllers.HesapApiController",
+    "Method": "Get",
+    "RelativePath": "api/HesapApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "denemekicin1.Models.Hesap",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "denemekicin1.Controllers.HesapApiController",
+    "Method": "Put",
+    "RelativePath": "api/HesapApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "y",
+        "Type": "denemekicin1.Models.Hesap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

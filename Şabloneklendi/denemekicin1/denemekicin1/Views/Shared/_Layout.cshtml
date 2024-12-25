@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - neww</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/neww.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Kadıköy Güzellik Merkezi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="About">Hakkımızda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Store"> Fiyat Listesi</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Product">Hizmetlerimiz</a>
+                        </li>
+                        @if (Context.Session.GetString("SesUsr") == null) //kullanıcı girisi yoksa
+                        {
+
+
+
+
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="Index1">Giriş Yap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="HesapEkle">Hesap Oluştur</a>
+                            </li>
+                        }
+                        else if (Context.Session.GetString("SesUsr") == "admin") //admin girisi varsa
+                        {
+
+
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="CalisanGoster">Çalışanlar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="RandevuGoster">Randevular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="HesapConsumeApi" asp-action="Index">Hesaplar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="LogOut">Log Out</a>
+                            </li>
+                        }
+                        else //kullanıcı girisi varsa
+                        {
+
+
+
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="RandevuEkle">Randevu Al</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="HesabinRandevusu">Randevularım/?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="islem" asp-action="LogOut">Log Out</a>
+                            </li>
+                        }
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
