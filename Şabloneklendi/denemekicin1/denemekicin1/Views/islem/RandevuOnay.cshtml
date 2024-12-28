@@ -1,0 +1,33 @@
+﻿@model denemekicin1.Models.Randevu
+
+@{
+    ViewData["Title"] = "Randevu Onay";
+}
+
+<h2>Randevu Onay</h2>
+
+@if (TempData["msj"] != null)
+{
+    <div class="alert alert-warning">@TempData["msj"]</div>
+}
+
+<div class="card">
+    <div class="card-header">Randevu Detayları</div>
+    <div class="card-body">
+        <p><strong>Hesap ID:</strong> @Model.HesapID</p>
+        <p><strong>Gün:</strong> @Model.RandevuGun</p>
+        <p><strong>Saat:</strong> @Model.RandevuSaat:00</p>
+        <p><strong>İşlem:</strong> @Model.SacIslemleri</p>
+        <p><strong>Toplam Tutar:</strong> @Model.ToplamTutar TL</p>
+        <p><strong>Çalışan:</strong> @Model.CalisanID</p>
+    </div>
+</div>
+
+<div class="mt-3">
+    <form asp-action="RandevuOnayla" method="post" class="d-inline">
+        <button type="submit" class="btn btn-success">Onayla</button>
+    </form>
+    <form asp-action="RandevuIptal" method="post" class="d-inline">
+        <button type="submit" class="btn btn-danger">Sil</button>
+    </form>
+</div>

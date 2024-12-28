@@ -1,119 +1,43 @@
 ﻿@model denemekicin1.Models.Calisan
-@using System.Linq
 
+<div class="alert-danger"> @TempData["msj"]</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CalisanKaydet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Business Casual - Start Bootstrap Theme</title>
-
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="~/js/scripts.js"></script>
-    <link href="~/css/styles.css" rel="stylesheet" />
-
-
-</head>
-<body style="background-image: url('/assets/img/d.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-
-    <header>
-        <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-upper text-primary mb-3">KADIKÖY GÜZELLİK MERKEZİ</span>
-            <span class="site-heading-lower">Çalışan ekleme sayfası</span>
-
-        </h1>
-    </header>
-    <br />
-    <!-- Navigation-->
-
-    <section class="page-section about-heading">
-        <div class="container">
-
-
-
-            <div class="about-heading-content">
-               
-                <div class="row">
-                    <center>
-                    <div class="col-xl-9 col-lg-10 mx-auto">
-                        <div class="bg-faded rounded p-5">
-                            
-                            <div class="row">
-                                    <center>
-                                <div class="col-md-4">
-                                    
-                                    <form asp-action="CalisanKaydet">
-                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                                        <div class="form-group">
-                                            <label asp-for="CalisanAd" class="control-label"></label>
-                                            <input asp-for="CalisanAd" class="form-control" />
-                                            <span asp-validation-for="CalisanAd" class="text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label asp-for="CalisanSoyad" class="control-label"></label>
-                                            <input asp-for="CalisanSoyad" class="form-control" />
-                                            <span asp-validation-for="CalisanSoyad" class="text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label asp-for="Telefon" class="control-label"></label>
-                                            <input asp-for="Telefon" class="form-control" />
-                                            <span asp-validation-for="Telefon" class="text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="submit" value="Çalışan Ekle" class="btn btn-primary" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label asp-for="alan" class="control-label"></label>
-                                            <input asp-for="alan" class="form-control" />
-                                            <span asp-validation-for="alan" class="text-danger"></span>
-                                        </div>
-                                    </form>
-                                 
-                                </div>
-                                    </center>
-                            </div>
-
-                            @section Scripts {
-                                @{
-                                    await Html.RenderPartialAsync("_ValidationScriptsPartial");
-                                }
-                            }
-
-                        </div>
-                    </div>
-                </div>
-                </center>
+            <div class="form-group">
+                <label asp-for="CalisanAd" class="control-label"></label>
+                <input asp-for="CalisanAd" class="form-control" />
+                <span asp-validation-for="CalisanAd" class="text-danger"></span>
             </div>
-            
-        </div>
-    </section>
 
-    <!--<img src="~/assets/img/about.jpg" />-->
-    <br />
-    <br />
-    <br />
-    <footer class="footer text-faded text-center py-5">
-        <div class="container"><p class="m-0 small">Kadıköy Güzellik Merkezi 2024</p></div>
-        <div class="container"><p class="m-0 small">Adres: Bahariye Caddesi No: 123, Kadıköy, İstanbul</p></div>
-        <div class="container"><p class="m-0 small">Telefon: +90 216 555 1234</p></p></div>
-        <div class="container"><p class="m-0 small">E-posta: info@kadikoyguzellikmerkezi.com</p></div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+            <div class="form-group">
+                <label asp-for="CalisanSoyad" class="control-label"></label>
+                <input asp-for="CalisanSoyad" class="form-control" />
+                <span asp-validation-for="CalisanSoyad" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Telefon" class="control-label"></label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Çalışan Ekle" class="btn btn-primary" />
+            </div>
+            <div class="form-group">
+                <label asp-for="alan" class="control-label"></label>
+                <input asp-for="alan" class="form-control" />
+                <span asp-validation-for="alan" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Sonuç";
+}
+
+<h2>Sonuç</h2>
+
+@if (ViewBag.Response != null)
+{
+    <pre>@ViewBag.Response</pre>
+}
+else
+{
+    <p>Analiz sırasında bir hata oluştu.</p>
+}

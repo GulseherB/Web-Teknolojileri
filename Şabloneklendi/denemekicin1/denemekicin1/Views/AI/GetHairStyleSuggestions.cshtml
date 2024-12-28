@@ -24,35 +24,60 @@
     <header>
         <h1 class="site-heading text-center text-faded d-none d-lg-block">
             <span class="site-heading-upper text-primary mb-3">KADIKÖY GÜZELLİK MERKEZİ</span>
-            <span class="site-heading-lower">HAKKIMIZDA</span>
+            <span class="site-heading-lower">YAPAY ZEKA SAÇ STİLİ ÖNERİSİ</span>
         </h1>
     </header>
     <!-- Navigation-->
 
     <section class="page-section about-heading">
         <div class="container">
-            <img src="/assets/img/555.jpg" alt="Görsel Açıklaması" class="img-fluid" />
 
+            </center>
 
             <div class="about-heading-content">
                 <div class="row">
                     <div class="col-xl-9 col-lg-10 mx-auto">
                         <div class="bg-faded rounded p-5">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper">NEDEN BİZ</span>
-                                <span class="section-heading-lower">HAKKIMIZDA</span>
-                            </h2>
-                            <p>
-                                Kadıköy Güzellik Merkezi olarak, güzellik ve bakım alanında yılların deneyimi ve profesyonelliğiyle sizlere en iyi hizmeti sunmayı hedefliyoruz. İstanbul’un merkezi Kadıköy’de yer alan modern ve konforlu merkezimizde, her biri alanında uzman, güler yüzlü ve yetenekli ekibimizle güzellik ihtiyaçlarınıza özel çözümler sunuyoruz.
+                           
 
-                                Bizim için güzellik sadece bir dış görünümden ibaret değil; aynı zamanda kişinin kendini iyi hissetmesi, özgüveninin artması ve içsel huzura ulaşmasıdır. Bu felsefeyle yola çıkarak, her müşterimizin kendini özel hissetmesini sağlayacak kişiselleştirilmiş bakım programları oluşturuyoruz.
-                            <p class="mb-0">
-                                Gelişen trendleri takip ederek, kendinizi özel hissetmeniz için her zaman en iyi bakım ve hizmeti sağlıyoruz. Yıllardır güveninizi kazanarak, güzellik ve bakım alanında lider olmanın gururunu yaşıyoruz
-                            </p>
+                            @if (ViewBag.Error != null)
+                            {
+                                <p style="color:red;">@ViewBag.Error</p>
+                            }
+                            <center>  
+                            <form asp-action="GetHairStyleSuggestions" method="post" enctype="multipart/form-data">
+                                <div>
+                                    <label for="faceShape">Yüz Şekli:</label>
+                                    <input type="text" name="faceShape" required />
+                                </div>
+                                <div>
+                                    <label for="skinType">Cilt Tipi:</label>
+                                    <input type="text" name="skinType" required />
+                                </div>
+                                <div>
+                                    <label for="hairLength">Saç Uzunluğu:</label>
+                                    <input type="text" name="hairLength" required />
+                                </div>
+                                <div>
+                                    <label for="naturalHairColor">Doğal Saç Rengi:</label>
+                                    <input type="text" name="naturalHairColor" required />
+                                </div>
+                                <div>
+                                    <label for="additionalFeatures">Ekstra Özellikler:</label>
+                                    <textarea name="additionalFeatures"></textarea>
+                                </div>
+                                <div>
+                                    <label for="uploadedPhoto">Fotoğraf Yükle:</label>
+                                    <input type="file" name="uploadedPhoto" accept="image/*" />
+                                </div>
+                                <button type="submit">Öneri Al</button>
+                            </form>
+                            </center>
                         </div>
                     </div>
                 </div>
             </div>
+            </center>
         </div>
     </section>
 

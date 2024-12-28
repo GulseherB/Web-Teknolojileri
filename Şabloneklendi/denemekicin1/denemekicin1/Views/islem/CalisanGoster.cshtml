@@ -1,100 +1,53 @@
-﻿@model IEnumerable<denemekicin1.Models.Calisan>
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<denemekicin1.Models.Calisan>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Business Casual - Start Bootstrap Theme</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="~/css/styles.css" rel="stylesheet" />
-    <script src="~/js/scripts.js"></script>
-</head>
+<a asp-action="CalisanEkle" class="btn btn-primary">Yeni Çalışan Ekle</a>
+<div class="alert-danger"> @TempData["msj"]</div>
 
-<body style="background-image: url('/assets/img/d.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-
-    <header>
-        <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-upper text-primary mb-3">KADIKÖY GÜZELLİK MERKEZİ</span>
-            <span class="site-heading-lower">ÇALIŞANLAR LİSTESİ</span>
-        </h1>
-    </header>
-    <!-- Navigation-->
-
-    <section class="page-section cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <div class="cta-inner bg-faded text-center rounded">
-
-
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.CalisanAd)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.CalisanSoyad)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.alan)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Telefon)
-                                    </th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model)
-                                {
-                                    <tr>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.CalisanAd)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.CalisanSoyad)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.alan)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Telefon)
-                                        </td>
-                                        <td>
-                                            <a asp-action="CalisanDuzenle" asp-route-id="@item.CalisanID" class="btn btn-sm btn-warning">Çalışan Düzenle</a> |
-                                            <a asp-action="CalisanSil" asp-route-id="@item.CalisanID" class="btn btn-sm btn-danger">Çalışan Sil</a>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-
-                        <a asp-action="CalisanEkle" class="btn btn-primary">Yeni Çalışan Ekle</a>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer text-faded text-center py-5">
-        <div class="container"><p class="m-0 small">Kadıköy Güzellik Merkezi 2024</p></div>
-        <div class="container"><p class="m-0 small">Adres: Bahariye Caddesi No: 123, Kadıköy, İstanbul</p></div>
-        <div class="container"><p class="m-0 small">Telefon: +90 216 555 1234</p></p></div>
-        <div class="container"><p class="m-0 small">E-posta: info@kadikoyguzellikmerkezi.com</p></div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CalisanAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CalisanSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.alan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CalisanAd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CalisanSoyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.alan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefon)
+                </td>
+                <td>
+                    <a asp-action="CalisanDuzenle" asp-route-id="@item.CalisanID" class="btn btn-sm btn-warning">Çalışan Düzenle</a> |
+                    <a asp-action="CalisanDetay" asp-route-id="@item.CalisanID" class="btn btn-sm btn-info">Çalışan Detay</a> |
+                    <a asp-action="CalisanSil" asp-route-id="@item.CalisanID" class="btn btn-sm btn-danger">Çalışan Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

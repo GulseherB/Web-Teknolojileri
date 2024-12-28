@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>TXT Yükleme</title>
+</head>
+<body>
+    <h2>Saç Özellikleri Açıklaması Yükle</h2>
+
+    @if (ViewBag.Error != null)
+    {
+        <p style="color:red;">@ViewBag.Error</p>
+    }
+
+    <form asp-action="UploadDescription" enctype="multipart/form-data" method="post">
+        <div>
+            <label for="descriptionFile">Bir TXT dosyası yükleyin:</label>
+            <input type="file" name="descriptionFile" accept=".txt" required />
+        </div>
+        <button type="submit">Yükle ve Analiz Et</button>
+    </form>
+</body>
+</html>

@@ -52,30 +52,35 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
+                                            <th>Durum</th>
                                             <th>Randevu ID</th>
                                             <th>Randevu Günü</th>
                                             <th>Randevu Saati</th>
                                             <th>Çalışan</th>
-                                            <th>İşlemler</th>
-                                            <th>Toplam Tutar</th>
-                                            <th>Durum</th>
-                                            <th>İşlem</th>
+                                            <th>İşlem-Tutar </th>
+                                            
+                                           
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach (var randevu in Model)
                                         {
                                             <tr>
+                                                <td>@randevu.Durum</td>
                                                 <td>@randevu.RandevuID</td>
                                                 <td>@randevu.RandevuGun</td>
                                                 <td>@randevu.RandevuSaat:00</td> <!-- Saat bilgisi -->
                                                 <td>@randevu.Calisan.CalisanAd @randevu.Calisan.CalisanSoyad</td> <!-- Çalışan Adı ve Soyadı -->
-                                                <td>@randevu.SacIslemleri</td> <!-- Saç işlemleri -->
-                                                <td>@randevu.ToplamTutar</td> <!-- Toplam Tutar -->
-                                                <td>@(randevu.RandevuBitisSaati > DateTime.Now.Hour ? "Geçerli" : "Geçmiş")</td> <!-- Randevu Durumu -->
+                                                <td>@randevu.SacIslemleri tl</td> <!-- Saç işlemleri -->
+                                                
                                                 <td>
-                                                    <a href="@Url.Action("RandevuSilk", "islem", new { id = randevu.RandevuID })" class="btn btn-danger">Sil</a>
-                                                </td>
+                                                    @if (randevu.Durum == "Beklemede")
+                                                    {
+
+                                                        <a href="@Url.Action("RandevuSilk", "islem", new { id = randevu.RandevuID })" class="btn btn-danger">Sil</a>
+
+                                                    }
+                                                
                                             </tr>
                                         }
                                     </tbody>
