@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using denemekicin1.Models;
 
@@ -10,9 +11,10 @@ using denemekicin1.Models;
 namespace denemekicin1.Migrations
 {
     [DbContext(typeof(hesaprandevuContext))]
-    partial class hesaprandevuContextModelSnapshot : ModelSnapshot
+    [Migration("20241228083139_adddurum")]
+    partial class adddurum
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -94,6 +96,10 @@ namespace denemekicin1.Migrations
 
                     b.Property<int>("CalisanID")
                         .HasColumnType("int");
+
+                    b.Property<string>("Durum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("HesapID")
                         .HasColumnType("int");
